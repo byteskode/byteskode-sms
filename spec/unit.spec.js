@@ -43,7 +43,6 @@ describe('byteskode sms', function() {
 
         SMS
             .send(sms, function(error, _sms, messages) {
-            	console.log(error);
                 //assert
                 expect(error).to.not.exist;
                 expect(_sms).to.exist;
