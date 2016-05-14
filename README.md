@@ -60,6 +60,7 @@ sms: {
         username: <infobip_usernam>,
         password: <infobip_password>,
         callbackUrl: '<full_qualified_callback_url>',
+        intermediateReport:true,
         models: {
             sms: {
                 name: 'SMS',
