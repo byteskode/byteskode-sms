@@ -1,56 +1,59 @@
 {
-    "name": "byteskode-sms",
-    "version": "0.1.0",
-    "description": "byteskode infobip sms with mongoose persistence support",
-    "main": "index.js",
-    "scripts": {
-        "test": "grunt test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/byteskode/byteskode-sms.git"
-    },
-    "keywords": [
-        "mongoose",
-        "mongoose-plugin",
-        "sms",
-        "infobip",
-        "send",
-        "resend",
-        "send",
-        "queue",
-        "persist"
-    ],
-    "author": {
-        "name": "lykmapipo",
-        "email": "lallyelias87@gmail.com",
-        "url": "https://github.com/lykmapipo"
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/byteskode/byteskode-sms/issues"
-    },
-    "homepage": "https://github.com/byteskode/byteskode-sms",
-    "devDependencies": {
-        "async": "^1.5.0",
-        "chai": "^3.4.1",
-        "express": "^4.13.4",
-        "faker": "^3.1.0",
-        "grunt": "^0.4.5",
-        "grunt-contrib-jshint": "^0.11.3",
-        "grunt-contrib-watch": "^0.6.1",
-        "grunt-mocha-test": "^0.12.7",
-        "jshint-stylish": "^2.0.1",
-        "mocha": "^2.3.3",
-        "mongoose": "^4.4.17"
-    },
-    "dependencies": {
-        "bipsms": "^0.2.0",
-        "config": "^1.20.1",
-        "e164": "0.0.5",
-        "execution-environment": "^1.1.0",
-        "lodash": "^4.12.0",
-        "moment": "^2.13.0",
-        "phone": "git+https://github.com/lykmapipo/phone.git"
-    }
+  "name": "byteskode-sms",
+  "version": "0.1.0",
+  "description": "byteskode infobip sms with mongoose persistence support",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/byteskode/byteskode-sms.git"
+  },
+  "keywords": [
+    "mongoose",
+    "mongoose-plugin",
+    "sms",
+    "infobip",
+    "send",
+    "resend",
+    "send",
+    "queue",
+    "persist"
+  ],
+  "author": {
+    "name": "lykmapipo",
+    "email": "lallyelias87@gmail.com",
+    "url": "https://github.com/lykmapipo"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/byteskode/byteskode-sms/issues"
+  },
+  "homepage": "https://github.com/byteskode/byteskode-sms",
+  "devDependencies": {
+    "async": "^1.5.0",
+    "body-parser": "^1.15.1",
+    "chai": "^3.4.1",
+    "express": "^4.13.4",
+    "faker": "^3.1.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.12.7",
+    "jshint-stylish": "^2.0.1",
+    "method-override": "^2.3.5",
+    "mocha": "^2.3.3",
+    "mongoose": "^4.4.17",
+    "supertest": "^1.2.0"
+  },
+  "dependencies": {
+    "bipsms": "^0.2.0",
+    "config": "^1.20.1",
+    "e164": "0.0.5",
+    "execution-environment": "^1.1.0",
+    "lodash": "^4.12.0",
+    "moment": "^2.13.0",
+    "phone": "git+https://github.com/lykmapipo/phone.git"
+  }
 }
