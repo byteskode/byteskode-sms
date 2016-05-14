@@ -59,7 +59,10 @@ Base on your environment setup, ensure you have the following configurations in 
 sms: {
         username: <infobip_usernam>,
         password: <infobip_password>,
-        callbackUrl: '<full_qualified_callback_url>',
+        callback: {
+            baseUrl:'http://example.com', //without leading foward slash
+            deliveries: '/sms-deliveries',
+        },
         intermediateReport:true,
         models: {
             sms: {
