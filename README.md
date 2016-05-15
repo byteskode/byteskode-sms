@@ -55,6 +55,11 @@ SMS.unsent([criteria], fuction(error,unsents){
     ...
 });
 
+//obtain sent sms
+SMS.sent([criteria], fuction(error,unsents){
+    ...
+});
+
 ```
 
 ## Configuration Options

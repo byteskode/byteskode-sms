@@ -16,6 +16,7 @@ describe('byteskode sms', function() {
 
     it('should be exported', function() {
         expect(SMS).to.exist;
+        expect(SMS.Message).to.exist;
     });
 
     it('should be able to send and resend SMS', function() {
@@ -104,6 +105,36 @@ describe('byteskode sms', function() {
 
     });
 
+
+    it('should be able to obtain unsent sms(s) in test and development mode', function(done) {
+        var sms = {
+            from: 'TEST',
+            to: ['+255 716 000 000', '+255 685 111 111'],
+            text: faker.lorem.sentence()
+        };
+
+        SMS.queue(sms, function(error) {
+
+            if (error) {
+                return done(error);
+            }
+
+            SMS.unsent(function(error, unsents) {
+
+                //assert
+                expect(error).to.not.exist;
+                expect(unsents).to.exist;
+
+                expect(unsents[0].sentAt).to.not.exist;
+                expect(unsents).to.have.length(1);
+
+
+                done(error, unsents);
+            });
+
+        });
+
+    });
 
     it('should be able to queue sms for later send', function(done) {
         var sms = {
