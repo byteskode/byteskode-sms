@@ -82,6 +82,9 @@ sms: {
     }
 ```
 
+## TODOS
+- [ ] add inbox sms to allow receiving sms
+
 ## Testing
 * Clone this repository
 
