@@ -1,6 +1,6 @@
 {
     "name": "byteskode-sms",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "byteskode infobip sms with mongoose persistence support",
     "main": "index.js",
     "scripts": {
