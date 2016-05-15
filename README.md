@@ -32,7 +32,7 @@ var sms = {
 };
 
 //send immediate
-SMS.send(sms, function(error, _sms, _messages){
+SMS.send(sms, [options], function(error, _sms, _messages){
         ...
 });
 
@@ -47,6 +47,11 @@ SMS.queue(sms);
 
 //resend failed sms
 SMS.resend(function(error, resents){
+    ...
+});
+
+//obtain unsent sms
+SMS.unsent([criteria], fuction(error,unsents){
     ...
 });
 
