@@ -18,6 +18,8 @@
         "send",
         "resend",
         "send",
+        "unsent",
+        "sent",
         "queue",
         "persist"
     ],

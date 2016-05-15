@@ -89,6 +89,12 @@ sms: {
 
 ## TODOS
 - [ ] add inbox sms to allow receiving sms
+- [ ] add ability to obtain message based on status
+    - [x] sent
+    - [x] unsent
+    - [ ] pending
+    - [ ] delivered
+    - [ ] failed
 
 ## Testing
 * Clone this repository
