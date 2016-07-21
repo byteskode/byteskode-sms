@@ -2,13 +2,13 @@
 
 /**
  * @name byteskode-sms
- * @description byteskode infobip sms with mongoose persistence support
+ * @description byteskode sms with mongoose persistence and kue support
  * @singleton
  */
 
 //set environment to development by default
 if (!(process.env || {}).NODE_ENV) {
-    process.env.NODE_ENV = 'development';
+  process.env.NODE_ENV = 'development';
 }
 
 //suppress configuration warning
@@ -20,9 +20,9 @@ var environment = require('execution-environment');
 
 //configure execution-environment
 if (!environment.isLocal) {
-    environment.registerEnvironments({
-        isLocal: ['test', 'dev', 'development']
-    });
+  environment.registerEnvironments({
+    isLocal: ['test', 'dev', 'development']
+  });
 }
 
 

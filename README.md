@@ -3,7 +3,7 @@ byteskode-sms
 
 [![Build Status](https://travis-ci.org/byteskode/byteskode-sms.svg?branch=master)](https://travis-ci.org/byteskode/byteskode-sms)
 
-byteskode infobip sms with mongoose persistence support
+byteskode sms with mongoose persistence and kue support
 
 *Note: sms is configured using [config](https://github.com/lorenwest/node-config) using key `sms`*
 
