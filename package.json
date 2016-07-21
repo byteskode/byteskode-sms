@@ -23,7 +23,10 @@
     "unsent",
     "sent",
     "queue",
-    "persist"
+    "persist",
+    "kue",
+    "kue-sms",
+    "worker"
   ],
   "author": {
     "name": "lykmapipo",
